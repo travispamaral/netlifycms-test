@@ -25,6 +25,13 @@ export default {
   components: {
     Logo
   },
+  head() {
+    return {
+      script: [
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      ]
+    }
+  },
   data() {
     return {
       pages: []
