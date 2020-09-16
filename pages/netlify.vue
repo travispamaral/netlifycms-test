@@ -10,10 +10,12 @@
 
 <script>
 export default {
-  async fetch({ $content }) {
+  async asyncData({ $content }) {
     const posts = await $content('blog').fetch()
 
-    return { posts }
+    return {
+      posts
+    }
   }
 }
 </script>
